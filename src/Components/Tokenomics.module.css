@@ -1,0 +1,32 @@
+.tokenomicsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desktop {
+  display: none;
+}
+
+.tokenomicsTitle{
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 80rem) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+  .tokenomicsTitle{
+  font-size: 3rem;
+}
+}
+
+@media screen and (min-width: 1440px) {
+.tokenomicsTitle{
+  font-size: 4rem;
+}
+}

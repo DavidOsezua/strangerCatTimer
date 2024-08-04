@@ -1,0 +1,33 @@
+.cats {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cat {
+  border-radius: 20px;
+  border: 4px solid #ff1515;
+}
+.contestTitle {
+  font-size: 3rem;
+}
+@media screen and (min-width: 80rem) {
+  .cats {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cat {
+    max-width: 100%;
+  }
+
+  .contestitle {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contestitle {
+    font-size: 4rem;
+  }
+}

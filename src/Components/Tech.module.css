@@ -1,0 +1,39 @@
+.wrapper {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  gap: 2rem;
+  flex-direction: column;
+
+  background: #310b0b;
+  border: 3px solid #ff1515;
+  border-radius: 25px;
+
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.title {
+  background: #ff1515;
+  color: #fff;
+  border-radius: 86.5909px;
+  font-size: 0.8rem;
+  padding: 0.5rem 2rem;
+}
+
+@media screen and (min-width: 80rem) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}

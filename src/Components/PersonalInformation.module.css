@@ -1,0 +1,15 @@
+.step1Container {
+  font-size: 0.7rem;
+  display: grid;
+  gap: 10px;
+}
+
+.text{
+    font-weight: 500;
+    
+}
+@media screen and (min-width: 80rem) {
+  .step1Container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,138 @@
+.heroContainer {
+  color: #fff;
+}
+
+.heroContainer > * + * {
+  margin-top: 2rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.catsHeading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 29px;
+  letter-spacing: -0.03em;
+}
+
+.catsSecondColumn {
+  border-radius: 22.9993px;
+  padding: 1.5rem 1.5rem;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #310b0b;
+  border: 3.44989px solid #ff1515;
+  box-shadow: inset 0px 0px 11.4996px 3.44989px #ff1515;
+  border-radius: 22.9993px;
+}
+
+.catsSecondColumn > * + * {
+  margin-top: 1rem;
+}
+
+.catsImage {
+  max-width: 100%;
+}
+
+.timerTitle{
+  font-size: 2.5rem;
+}
+.vision {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+}
+.visionCard {
+  background: #310b0b;
+  border: 3px solid #ff1515;
+  border-radius: 20px;
+
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.textContent > * + * {
+  margin-top: 0.5rem;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  gap: 16px;
+  width: 100%;
+  background: #ff1515;
+  color: #fff;
+  border-radius: 45px;
+  font-family: "McLaren", sans-serif;
+  font-style: normal;
+  font-weight: 400; 
+}
+
+.visionTitle {
+  font-size: 3rem;
+}
+
+  .visionCardTitle {
+    font-size: 1.8rem;
+  }
+@media screen and (min-width: 80rem) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+ .catsImage {
+  max-width: 50%;
+}
+
+  .text {
+    max-width: 70%;
+  }
+  .vision {
+    grid-template-columns: 1fr 1fr;
+  }
+  .timerTitle{
+  font-size: 4rem;
+}
+}
+
+@media screen and (min-width: 1440px) {
+  .innerText {
+    font-size: 1.5rem;
+  }
+
+  .visionTitle {
+    font-size: 4rem;
+  }
+
+  .visionCardTitle {
+    font-size: 2rem;
+  }
+
+  .timerTitle{
+  font-size: 4.5rem;
+}
+.catsImage {
+  max-width: 50%;
+}
+}

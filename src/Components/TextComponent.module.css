@@ -1,0 +1,29 @@
+.textContainer {
+  color: #fff;
+  /* background: #3d0752; */
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.textContainer > * + * {
+  margin-top: 2rem;
+}
+
+.text {
+  font-weight: 100;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.aboutTitle {
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .aboutTitle {
+    font-size: 4rem;
+  }
+}

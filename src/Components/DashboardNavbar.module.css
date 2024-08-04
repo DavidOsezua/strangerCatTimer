@@ -1,0 +1,103 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  background: #00050c;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  border-bottom: 1px solid #ff1515;
+
+  /* box-shadow: ; */
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.navLogo > * + * {
+  padding-left: 8px;
+}
+.navLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.mobile {
+  display: flex;
+  align-items: center;
+}
+
+.desktop {
+  display: flex;
+  gap: 10px;
+}
+
+.navMenu {
+  position: relative;
+}
+
+@media screen and (max-width: 913px) {
+}
+
+.btn {
+  padding: 7px 10px;
+  gap: 16px;
+  font-size: 0.8rem;
+  background: #ff1515;
+  border-radius: 24px;
+  font-family: "McLaren", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.midRow,
+.select {
+  display: none;
+}
+
+.mobileProfile {
+  padding: 5px 12px;
+  gap: 16px;
+  max-width: 100px;
+  height: 34px;
+  background: #310b0b;
+  border-radius: 27px;
+}
+/* responsive */
+
+@media screen and (min-width: 913px) {
+  .navbar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  .navbar {
+    padding-right: 1.3rem;
+    padding-left: 1.3rem;
+  }
+
+  /* .mobileProfile {
+    display: none;
+  } */
+
+  .midRow {
+    display: block;
+    color: #fff;
+    display: flex;
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+}

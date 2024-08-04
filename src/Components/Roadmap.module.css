@@ -1,0 +1,42 @@
+.stepsContainer {
+  border-radius: 25px;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+.steps {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+  color: #fff;
+}
+
+.stepGuide {
+  padding: 1rem 0;
+  background: rgba(255, 255, 255, 0.002);
+  border: 3.20585px solid #ce3dd8;
+  border-radius: 20.3037px;
+  gap: 2rem;
+  text-align: left;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.stepGuide > * + * {
+  margin-top: 2rem;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+.text {
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+@media screen and (min-width: 80rem) {
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,78 @@
+.stepsContainer {
+  /* background: #3d0752; */
+  /* Background */
+
+  background: #310b0b;
+  border-radius: 20px;
+
+  border-radius: 25px;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.stepGuide {
+  padding: 1rem 0;
+  background: rgba(255, 255, 255, 0.002);
+
+  background: #310b0b;
+  border: 3.20585px solid #ff1515;
+  /* box-shadow: inset 0px 0px 11.4996px 3.44989px #FF1515; */
+  border-radius: 20.3037px;
+
+  border-radius: 20.3037px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: #ff1515;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 1rem;
+}
+.participationtitle {
+  font-size: 3rem;
+}.text {
+    font-size: 1.7rem;
+  }
+
+@media screen and (min-width: 80rem) {
+  .steps {
+    flex-direction: row;
+  }
+
+  .participationtitle {
+  font-size: 3rem;
+}
+
+.text {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .participationtitle {
+    font-size: 4rem;
+  }
+
+  .text {
+    font-size: 2.3rem;
+  }
+}

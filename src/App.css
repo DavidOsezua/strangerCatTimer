@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Jomhuria&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=McLaren&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jomhuria", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+
+p,
+li,button {
+  font-family: "McLaren", sans-serif;
+  /* font-weight: 100; */
+  font-style: normal;
+}
+
+.section {
+  background: linear-gradient(90deg, #00050c 0%, #05141f 26%, #00050c 100%);
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 2rem;
+}
+
+.sectionContainer {
+  padding-top: 3rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+.inputContainer {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #1e1e1e;
+  border-radius: 9px;
+  color: #2d2d2d;
+  padding: 0.5rem;
+}
+
+.input {
+  outline: none;
+  color: #2d2d2d;
+  background: transparent;
+  width: 100%;
+}
+
+.btn {
+  width: 148px;
+  padding: 0.6rem;
+  color: #fff;
+  font-weight: 600;
+  background: #ff1515;
+  border-radius: 9px;
+}

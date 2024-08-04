@@ -1,0 +1,100 @@
+.swapContainer {
+  width: 100%;
+  padding: 0.8rem 0.5rem;
+  background: #310B0B;
+  border: 2px solid #ff1515; ;
+  border-radius: 8px;
+}
+
+.swapContainer > * + * {
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.step1Container > * + * {
+  margin-top: 0.5rem;
+  color: #fff;
+}
+
+.inputWrapper {
+  background: #02040F99;
+  border-radius: 10px;
+}
+
+.inputContainer {
+  width: 100%;
+  background: #02040F99;
+  border: 1px solid #1e1e1e;
+  border-radius: 9px;
+  color: #fff;
+
+  padding: 0.3rem;
+}
+
+.input {
+  outline: none;
+  color: #fff;
+  background: transparent;
+  width: 100%;
+}
+
+.text {
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+.secondDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  /* Frame 1261152747 */
+
+  width: 100%;
+  /* BUY $STRANGER CAT NOW */
+ font-family: "McLaren", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  /* identical to box height */
+
+  color: #fff;
+
+  background: #ff1515;
+  border-radius: 46px;
+  padding: 0.8rem;
+}
+
+.swapBtn {
+  /* Frame 1261152747 */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  /* padding: 0rem 0.5rem; */
+  align-items: center;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background: #ff1515;
+  width: 9rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 80rem) {
+  .swapContainer {
+    padding: 2rem 1rem;
+  }
+
+  .swapContainer > * + * {
+    margin-top: 2rem;
+  }
+  .secondDiv {
+    flex-direction: row;
+    width: 100%;
+  }
+}
