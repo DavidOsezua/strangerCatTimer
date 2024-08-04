@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { twoDots } from "../assets";
 import styles from "./Timer.module.css";
+import "../App.css";
 
 const COUNTDOWN_TARGET = new Date("2024-08-05T20:00:00");
 

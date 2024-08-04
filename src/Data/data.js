@@ -20,10 +20,10 @@ import {
 } from "../assets";
 
 export const navLinks = [
-  { Link: "Burn" },
-  { Link: "Tokenomics" },
-  { Link: "Contest" },
-  { Link: "Community" },
+  { Link: "Burn", name: "participation" },
+  { Link: "Tokenomics", name: "tokenomics" },
+  { Link: "Contest", name: "contest" },
+  { Link: "Community", name: "community" },
 ];
 
 export const visionCard = [

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
   Contest,
   Disclaimer,
@@ -13,11 +13,13 @@ import {
 } from "../Components";
 import TextComponent from "../Components/TextComponent";
 import Timer from "../Components/Timer";
+import Socials from "../Components/Socials";
 
 const HomePage = () => {
+  const burnRef = useRef();
   return (
     <>
-      <Navbar />
+      <Navbar burnRef={burnRef} />
       <Hero />
       <Participation />
       <Tokenomics />
@@ -25,6 +27,7 @@ const HomePage = () => {
       <Contest />
       <Tech />
       <Disclaimer />
+      <Socials/>
     </>
   );
 };

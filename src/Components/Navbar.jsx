@@ -6,8 +6,9 @@ import { navLinks } from "../Data/data";
 import Telegram from "./Telegram";
 import Twitter from "./Twitter";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 
-const Navbar = () => {
+const Navbar = ({ burnRef }) => {
   const [toggle, setToggle] = useState(false);
   const toggleHandler = () => {
     setToggle((prev) => !prev);
@@ -31,9 +32,16 @@ const Navbar = () => {
           {/********************* Menu Lists *******************/}
 
           {navLinks.map((navlink) => (
-            <li className={styles.navItems} key={navlink.Link}>
-              {navlink.Link}
-            </li>
+            <Link
+              to={navlink.name}
+              smooth={true}
+              duration={500}
+              key={navlink.Link}
+            >
+              <li onClick={toggleHandler} className={styles.navItems}>
+                {navlink.Link}
+              </li>
+            </Link>
           ))}
         </ul>
 
@@ -50,8 +58,13 @@ const Navbar = () => {
            <button className={`${styles.btn}`}>Buy $STRANGER</button>
           </NavLink> */}
 
-          <Telegram />
-          <Twitter />
+          <a href="https://t.me/strangercats01" target="_blank">
+            <Telegram />
+          </a>
+
+          <a href="https://x.com/strangercatsol?s=11&t=gFKcOja2ZLWSWrWOKvMCgQ" target="_blank">
+            <Twitter />
+          </a>
         </div>
       </div>
     </nav>

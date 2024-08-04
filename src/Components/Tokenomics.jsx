@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import styles from "./Tokenomics.module.css";
 import { tokenominsMobile } from "../assets";
+import { Element } from "react-scroll";
 
 export const TokenomicsDataDesktop = () => {
   return (
@@ -290,6 +291,7 @@ export const TokenomicsDataDesktop = () => {
 
 const Tokenomics = () => {
   return (
+    <Element name="tokenomics">
     <section className={`section text-center`}>
       <h1 className={styles.tokenomicsTitle}>Tokenomics</h1>
 
@@ -303,6 +305,7 @@ const Tokenomics = () => {
         </div>
       </div>
     </section>
+    </Element>
   );
 };
 
