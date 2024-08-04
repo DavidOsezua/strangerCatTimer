@@ -32,16 +32,15 @@ const Navbar = ({ burnRef }) => {
           {/********************* Menu Lists *******************/}
 
           {navLinks.map((navlink) => (
-            <Link
-              to={navlink.name}
-              smooth={true}
-              duration={500}
+            <li
+              onClick={toggleHandler}
               key={navlink.Link}
+              className={styles.navItems}
             >
-              <li onClick={toggleHandler} className={styles.navItems}>
+              <Link to={navlink.name} smooth={true} duration={500}>
                 {navlink.Link}
-              </li>
-            </Link>
+              </Link>
+            </li>
           ))}
         </ul>
 
@@ -62,7 +61,10 @@ const Navbar = ({ burnRef }) => {
             <Telegram />
           </a>
 
-          <a href="https://x.com/strangercatsol?s=11&t=gFKcOja2ZLWSWrWOKvMCgQ" target="_blank">
+          <a
+            href="https://x.com/strangercatsol?s=11&t=gFKcOja2ZLWSWrWOKvMCgQ"
+            target="_blank"
+          >
             <Twitter />
           </a>
         </div>
